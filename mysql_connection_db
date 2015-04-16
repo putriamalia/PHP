@@ -1,6 +1,9 @@
 $host = "your host name";
 $user = "your username DB";
-$pass = "your password DB"
+$pass = "your password DB";
+
+//bisa juga menggunakan mysql_connect ($host,$user,$pass);
+//mysqli_connect disarankan untuk versi PHP diatas 5
 
 mysqli_connect($host,$user,$pass);
 
