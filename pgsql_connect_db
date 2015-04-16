@@ -1,0 +1,6 @@
+$host = "your host name";
+$user = "your username DB";
+$pass = "your password DB";
+$port = "your port DB";
+
+pgconnect($host,$port,$user,$pass);
