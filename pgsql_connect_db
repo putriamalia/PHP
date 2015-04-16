@@ -3,7 +3,7 @@ $user = "your username DB";
 $pass = "your password DB";
 $port = "your port DB";
 
-pgconnect($host,$port,$user,$pass);
+pg_connect($host,$port,$user,$pass);
 
 //if you want check your connection db
 /*
