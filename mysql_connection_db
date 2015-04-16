@@ -1,0 +1,14 @@
+$host = "your host name";
+$user = "your username DB";
+$pass = "your password DB"
+
+mysqli_connect($host,$user,$pass);
+
+//if you want to check your connection
+/*
+$connection =  mysqli_connect($host,$user,$pass);
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+*/
