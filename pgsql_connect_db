@@ -4,3 +4,11 @@ $pass = "your password DB";
 $port = "your port DB";
 
 pgconnect($host,$port,$user,$pass);
+
+//if you want check your connection db
+/*
+$connection = pgconnect($host,$port,$user,$pass);
+if(!($connection)){
+  pg_close($connection);
+}
+*/
