@@ -1,0 +1,11 @@
+$conn = pg_connect('host=host_name dbname=db_name user=user_db password=pass_db'); 
+
+$sql = "SELECT * FROM table_name";
+$retval = pg_query($sql,$conn);
+  
+  if(!($retval)){
+    echo pg_last_error();
+  }else{
+    redirect('http://example.com/');
+  }
+
