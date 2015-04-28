@@ -1,0 +1,24 @@
+//if you have file connection just include the file
+/*
+  <?php include 'nameFileConnect.php';?>;
+*/
+
+<?php
+  $host = "localhost";
+  $user = "putri";
+  $pass = "password";
+  
+  $conn = mysql_connect($host,$user,$pass);
+  
+  $sql = "SELECT * FROM table_name";
+  mysql_select_db('name_of_db');
+  
+  $retval = mysql_query($sql,$conn);
+  
+  if(!($retval)){
+    echo mysql_error();
+  }else{
+    redirect('http://example.com/');
+  }
+  
+?>
